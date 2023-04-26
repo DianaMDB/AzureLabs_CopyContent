@@ -33,3 +33,35 @@
 "stock": 40
 }
 ```
+
+
+## Lab 2
+
+### Swagger Editor
+```
+            properties:
+              _id:
+                type: string
+                description: _id
+                title: PassportNumber
+              firstname:
+                type: string
+                description: firstname
+                title: firstname
+              lastname:
+                type: string
+                description: lastname
+                title: lastname
+              DateOfBirth:
+                type: string
+                description: DateOfBirth
+                title: DateOfBirth
+              passportNumber:
+                type: string
+                description: passportNumber
+                title: passportNumber
+              emailId:
+                type: string
+                description: emailId
+                title: emailId
+```
