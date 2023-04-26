@@ -37,7 +37,7 @@
 
 ## Lab 2
 
-### Swagger Editor
+### Power Apps : Swagger Editor
 ```
             properties:
                   _id:
@@ -64,4 +64,10 @@
                     type: string
                     description: emailId
                     title: emailId
+```
+
+### Power Apps - MongoDB Insert query
+```
+MongoDB.InsertDocument("Sandbox","XYZBank","onboarding",{_id:Passport.Text,firstname:Upper(Fname.Text),lastname:Upper(Lname.Text),DateOfBirth:DOB.Text,passportNumber:Passport.Text,emailId:email.Text});
+Reset(Fname);Reset(Lname);Reset(DOB);Reset(Passport);Reset(email);
 ```
