@@ -71,3 +71,23 @@
 MongoDB.InsertDocument("Sandbox","XYZBank","onboarding",{_id:Passport.Text,firstname:Upper(Fname.Text),lastname:Upper(Lname.Text),DateOfBirth:DOB.Text,passportNumber:Passport.Text,emailId:email.Text});
 Reset(Fname);Reset(Lname);Reset(DOB);Reset(Passport);Reset(email);
 ```
+
+### Power Automate - mail body
+```
+Hi,
+Your uploaded document has been analysed and the details are as below:
+
+    First Name: <From previous AI step - First name>,
+    
+    Last Name: <From previous AI step - Last name>,
+    
+    Document Number: <From previous AI step- Identity document number>,
+    
+    Country/Region: <From previous AI step -Country/ Region>,
+    
+    Date of birth: <From previous AI step - Date of birth>
+    
+Please revert if the details are inaccurate, else we have updated our records with your information.
+Have a nice day!
+Regards,
+Document Analyser
